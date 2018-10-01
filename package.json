@@ -1,0 +1,22 @@
+{
+  "name": "brainyquote-parser",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "repository": "https://github.com/MilosMosovsky/BrainyQuote-nodejs-parser",
+  "license": "MIT",
+  "scripts": {
+    "start": "babel-node src/parse.js"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/node": "^7.0.0",
+    "@babel/preset-env": "^7.1.0"
+  },
+  "dependencies": {
+    "csv-writer": "^1.2.0",
+    "node-fetch": "^2.2.0",
+    "node-html-parser": "^1.1.10",
+    "whatwg-fetch": "^3.0.0"
+  }
+}
