@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "csv-writer": "^1.2.0",
+    "html-entities": "^1.2.1",
     "node-fetch": "^2.2.0",
     "node-html-parser": "^1.1.10",
     "whatwg-fetch": "^3.0.0"

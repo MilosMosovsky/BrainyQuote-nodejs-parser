@@ -1,6 +1,9 @@
 import fetch from 'node-fetch'
 import { parse } from 'node-html-parser'
 import { createObjectCsvWriter } from 'csv-writer'
+import { XmlEntities } from 'html-entities'
+
+const entities = new XmlEntities()
 
 const csvWriter = createObjectCsvWriter({
   path: 'output/output.csv',
@@ -30,7 +33,8 @@ function buildBody (page = 1, topic = TOPICS.BUSSINESS) {
 }
 
 function parseQuote (quoteBody) {
-  return quoteBody.childNodes[0].rawText
+  const text = entities.decode(quoteBody.childNodes[0].rawText)
+  return text
 }
 
 function getPageForCategory (page = 1, category = TOPICS.BUSSINESS) {
