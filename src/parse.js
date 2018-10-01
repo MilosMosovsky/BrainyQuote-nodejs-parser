@@ -10,7 +10,9 @@ const csvWriter = createObjectCsvWriter({
 const TOTAL_PAGES = 10
 
 const TOPICS = {
-  BUSSINESS: 't:132568'
+  BUSSINESS: 't:132568',
+  LIFE: 't:132584',
+  MOTIVATIONAL: 't:132622'
 }
 
 function buildBody (page = 1, topic = TOPICS.BUSSINESS) {
